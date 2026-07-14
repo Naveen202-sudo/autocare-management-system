@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#f8fafc,#dbeafe);
+
+}
+
+.register-form{
+    width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.register-form h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.register-form input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.register-form input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.3);
+}
+
+.register-form button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-form button:hover{
+    background: #1d4ed8;
+}
+
+.register-form p{
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.register-form a{
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#f8fafc,#dbeafe);
+
+
+}
+
+.login-form{
+    width: 400px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.login-form h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+    font-size: 28px;
+}
+
+.login-form input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-form input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.2);
+}
+
+.login-form button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover{
+    background: #1d4ed8;
+}
+
+.login-form p{
+    color: red;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.login-form a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.login-form a:hover{
+    color: #1d4ed8;
+}
+
+
+.dashboard-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:#0f172a;
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover{
+    background:#1e293b;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:visited{
+    color: white;
+}
+
+/* Main Content */
+
+.main-content{
+    flex:1;
+    background:#f8fafc;
+}
+
+/* Navbar */
+
+.navbar{
+    background:white;
+    padding:20px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar h2{
+    color:#1e293b;
+}
+
+.navbar button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* Welcome */
+
+.welcome-section{
+    padding:30px;
+}
+
+.welcome-section h1{
+    color:#1e293b;
+}
+.welcome-section P{
+    font-weight: 600;
+}
+
+/* Cards */
+
+.dashboard-cards{
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:32px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.customer-container{
+    padding:30px;
+}
+
+.customer-container h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.customer-container form{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:500px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.customer-container input{
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    outline:none;
+}
+
+.customer-container button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.customer-title{
+    margin-top:40px;
+}
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.vehicle-content{
+    min-height:100vh;
+    padding:30px;
+    background:#f1f5f9;
+}
+
+.vehicle-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.vehicle-box h2{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.vehicle-box form{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.vehicle-box input{
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+}
+
+.vehicle-box select{
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    width:100%;
+}
+
+.vehicle-box button{
+    grid-column:span 2;
+    padding:12px;
+    background:#0f172a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+}
+
+th{
+    background:#0f172a;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+.service-content{
+    min-height:100vh;
+    background:#fff7ed;
+    padding:30px;
+}
+
+.service-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-box h2{
+    text-align:center;
+    color:#ea580c;
+    margin-bottom:20px;
+}
+
+.service-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.service-box input,
+.service-box textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.service-box textarea{
+    resize:none;
+    height:100px;
+}
+
+.service-box button{
+    background:#ea580c;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.service-box button:hover{
+    background:#c2410c;
+}
+
+
+.service-record-container{
+    min-height: 100vh;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.service-record-box{
+    width: 100%;
+    max-width: 1100px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.service-record-box h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.service-record-box form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
+
+.service-record-box input,
+.service-record-box select{
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.service-record-box input:focus,
+.service-record-box select:focus{
+    border-color: #2563eb;
+}
+
+.service-record-box button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-record-box button:hover{
+    background: #1d4ed8;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th{
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover{
+    background: #f8fafc;
+}
+
+.delete-btn{
+    background: #dc2626;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background: #b91c1c;
+}
+
+
+
+.billing-container{
+    min-height: 100vh;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.billing-box{
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.billing-box h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.billing-box form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
+
+.billing-box select,
+.billing-box input{
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.billing-box select:focus,
+.billing-box input:focus{
+    border-color: #2563eb;
+}
+
+.billing-box button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #16a34a;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.billing-box button:hover{
+    background: #15803d;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th{
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover{
+    background: #f8fafc;
+}
+
+.delete-btn{
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background: #b91c1c;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  background:black;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  flex:1; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+
+/* ===== Tablet ===== */
+@media (max-width: 992px) {
+
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo{
+    font-size: 28px;
+    text-align: center;
+    flex: none;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logout-btn{
+    width: auto;
+  }
+
+}
+
+
+/* ===== Mobile===== */
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    padding:20px 15px;
+  }
+
+  .logo{
+    font-size:24px;
+    text-align:center;
+    margin-bottom:15px;
+  }
+
+  .nav-links{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+  }
+
+  .nav-links a{
+    font-size:18px;
+  }
+
+  .logout-btn{
+    width:180px;
+    padding:10px;
+  }
+
+}
+
+
