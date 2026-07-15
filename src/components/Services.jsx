@@ -127,6 +127,8 @@ function Services() {
           📋 Service List
         </h2>
 
+        <div className="table-container">
+
         <table>
 
           <thead>
@@ -179,6 +181,7 @@ function Services() {
           </tbody>
 
         </table>
+        </div>
 
       </div>
 

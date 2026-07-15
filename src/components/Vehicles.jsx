@@ -164,6 +164,8 @@ function Vehicles() {
           🚙 Vehicle List
         </h2>
 
+        <div className="table-container">
+
         <table>
 
           <thead>
@@ -222,6 +224,8 @@ function Vehicles() {
           </tbody>
 
         </table>
+
+        </div>
 
       </div>
 

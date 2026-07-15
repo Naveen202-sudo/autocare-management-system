@@ -195,6 +195,8 @@ function ServiceRecords() {
           📄 Service Record List
         </h2>
 
+        <div className="table-container">
+
         <table>
 
           <thead>
@@ -251,6 +253,8 @@ function ServiceRecords() {
           </tbody>
 
         </table>
+
+        </div>
 
       </div>
 

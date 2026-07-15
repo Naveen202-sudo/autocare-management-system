@@ -13,7 +13,8 @@
 }
 
 .register-form{
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     background: white;
     padding: 35px;
     border-radius: 15px;
@@ -81,7 +82,8 @@
 }
 
 .login-form{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background: #ffffff;
     padding: 35px;
     border-radius: 15px;
@@ -278,7 +280,8 @@
     background:white;
     padding:25px;
     border-radius:12px;
-    width:500px;
+    width:100%;
+    max-width: 500px;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
 
     display:flex;
@@ -716,67 +719,179 @@ table tr:hover{
   background: #dc2626;
 }
 
-
-/* ===== Tablet ===== */
-@media (max-width: 992px) {
-
-  .navbar{
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .logo{
-    font-size: 28px;
-    text-align: center;
-    flex: none;
-  }
-
-  .nav-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .logout-btn{
-    width: auto;
-  }
-
+.table-container{
+    width:100%;
+    overflow-x:auto;
 }
 
 
-/* ===== Mobile===== */
-@media (max-width: 768px){
+/* ================= MOBILE ================= */
 
-  .navbar{
-    flex-direction: column;
-    padding:20px 15px;
-  }
+@media (max-width:768px){
 
-  .logo{
-    font-size:24px;
-    text-align:center;
-    margin-bottom:15px;
-  }
+    /* Register */
 
-  .nav-links{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-  }
+    .register-container,
+    .login-container{
+        padding:20px;
+    }
 
-  .nav-links a{
-    font-size:18px;
-  }
+    .register-form,
+    .login-form{
+        width:100%;
+        max-width:400px;
+        padding:25px;
+    }
 
-  .logout-btn{
-    width:180px;
-    padding:10px;
-  }
+    .register-form h2,
+    .login-form h2{
+        font-size:30px;
+    }
+
+    .register-form input,
+    .register-form button,
+    .login-form input,
+    .login-form button{
+        font-size:16px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+    }
+
+    .sidebar h2{
+        margin-bottom:20px;
+    }
+
+    .sidebar ul li{
+        text-align:center;
+        margin-bottom:8px;
+    }
+
+    .welcome-section{
+        padding:20px;
+        text-align:center;
+    }
+
+    .dashboard-cards{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+
+    /* Navbar */
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:20px;
+    }
+
+    .logo{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .nav-links{
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .logout-btn{
+        width:180px;
+    }
+
+
+    /* Customer */
+
+    .customer-container{
+        padding:15px;
+    }
+
+    .customer-container form{
+        width:100%;
+        max-width:100%;
+    }
+
+
+    /* Vehicle */
+
+    .vehicle-content{
+        padding:15px;
+    }
+
+    .vehicle-box{
+        padding:20px;
+    }
+
+    .vehicle-box form{
+        grid-template-columns:1fr;
+    }
+
+    .vehicle-box button{
+        grid-column:span 1;
+    }
+
+
+    /* Service */
+
+    .service-content{
+        padding:15px;
+    }
+
+    .service-box{
+        padding:20px;
+    }
+
+
+    /* Service Record */
+
+    .service-record-container{
+        padding:20px 10px;
+    }
+
+    .service-record-box{
+        padding:20px;
+    }
+
+    .service-record-box form{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Billing */
+
+    .billing-container{
+        padding:20px 10px;
+    }
+
+    .billing-box{
+        padding:20px;
+    }
+
+    .billing-box form{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .dashboard-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
 
 }
 

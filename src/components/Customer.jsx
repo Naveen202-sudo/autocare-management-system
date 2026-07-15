@@ -125,6 +125,8 @@ function Customer() {
           Customer List
         </h2>
 
+        <div className="table-container">
+
         <table>
 
           <thead>
@@ -177,6 +179,8 @@ function Customer() {
           </tbody>
 
         </table>
+
+        </div>
 
       </div>
     </>

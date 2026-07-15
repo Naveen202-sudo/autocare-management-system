@@ -95,7 +95,7 @@ function Billing() {
 
     const updatedBills =
       billList.filter(
-        (_, i) => i !== index
+        (bills, i) => i !== index
       );
 
     setBillList(updatedBills);
@@ -204,6 +204,8 @@ function Billing() {
           📄 Billing List
         </h2>
 
+        <div className="table-container">
+
         <table>
 
           <thead>
@@ -287,6 +289,7 @@ function Billing() {
           </tbody>
 
         </table>
+        </div>
 
       </div>
 
